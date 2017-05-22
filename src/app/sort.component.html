@@ -1,0 +1,10 @@
+<span (click)="sort()"> 
+<ng-content></ng-content>
+</span>
+<span *ngIf="sortEnum === SortEnum.Descending">
+    <img src="https://static.dpaw.wa.gov.au/static/libs/ionicons/1.2/src/icon-chevron-down.svg" width="20px" height="20px" />
+</span>
+
+<span *ngIf="sortEnum === SortEnum.Ascending">
+    <img src="https://static.dpaw.wa.gov.au/static/libs/ionicons/1.2/src/icon-chevron-up.svg" width="20px" height="20px" />
+</span>

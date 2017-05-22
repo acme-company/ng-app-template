@@ -13,7 +13,8 @@ module.exports = {
   },
   entry: {
     app: 'src/main.ts',
-    polyfills: 'src/polyfills.ts'
+    polyfills: 'src/polyfills.ts',
+    stylesheets: 'src/stylesheets.ts'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -84,7 +85,8 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.scss$/, loaders: ['raw-loader', 'sass-loader'] },
-      { test: /\.css$/, loader: 'raw-loader' }, { test: /\.html$/, loader: 'raw-loader' },
+      { test: /\.css$/, loader: 'style-loader!css-loader' }, 
+      { test: /\.html$/, loader: 'raw-loader' },
       { test: /\.ts$/, loader: '@ngtools/webpack' }
     ]
   }

@@ -1,0 +1,33 @@
+<ng-template #content  let-c="close" let-d="dismiss">
+    <form [formGroup]="myForm">
+    <div class="modal-header">
+        <h4 class="modal-title">{{ title }}</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="modal-body">
+        
+          
+        <div class="form-group row">
+            <label for="example-search-input" class="col-2 col-form-label">First Name</label>
+            <div class="col-10">
+                <input class="form-control" formControlName="firstName" name="firstName" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-email-input" class="col-2 col-form-label">Last Name</label>
+            <div class="col-10">
+                <input class="form-control" formControlName="lastName" name="lastName" type="text" value="">
+            </div>
+        </div>
+           
+    </div>
+    <div class="modal-footer">
+        <button type="button" [disabled]="!myForm.valid" class="btn btn-primary" (click)="c(myForm.value)">Ok</button>
+        <button type="button" class="btn btn-secondary" (click)="d('Close click')">Close</button>
+    </div>
+    </form>
+</ng-template>
+<ng-content></ng-content>
+
