@@ -16,9 +16,9 @@ module.exports = {
     polyfills: 'src/polyfills.ts'
   },
   output: {
-    path: path.resolve(__dirname, 'dist/bundles'),
-    filename: '[hash]-[name].bundle.js',
-    publicPath: '/bundles/'
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundles/[hash]-[name].bundle.js',
+    publicPath: '/'
   },
   plugins: [
     new ngTools.AotPlugin({
