@@ -3,6 +3,7 @@ const path = require('path');
 const ngTools = require('@ngtools/webpack');
 const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
@@ -16,7 +17,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist/bundles'),
-    filename: '[name].bundle.js'
+    filename: '[hash]-[name].bundle.js',
+    publicPath: '/bundles/'
   },
   plugins: [
     new ngTools.AotPlugin({
@@ -71,6 +73,11 @@ module.exports = {
     new CommonsChunkPlugin({
       names: [ "app", "polyfills"],
        minChunks: Infinity  
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: __dirname + '/dist/index.html',
+      template: __dirname + '/src/index.html'
     })
 
   ],
