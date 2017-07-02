@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-    template: 'hi there'
+    template: '<router-outlet></router-outlet>'
 })
 export class InboxComponent {
     

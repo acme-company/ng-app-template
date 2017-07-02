@@ -2,13 +2,13 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { AppComponent } from './app.component';
 import { InboxComponent } from "./modules/inbox/inbox.component";
 import { NotFoundComponent } from "./shared/not-found.component";
+import { WelcomeComponent } from "./welcome.component";
 
 
 const appRoutes: Routes = [
+  { path: 'home', component: WelcomeComponent },
+  { path: 'inbox', loadChildren: './modules/inbox/inbox.module.ts#InboxModule' },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: NotFoundComponent },
-  //{ path: 'inbox', loadChildren: './modules/inbox/inbox.module.ts#InboxModule' }
-  { path: 'test', component: NotFoundComponent},
   { path: '**', component: NotFoundComponent }
 ];
 

@@ -4,7 +4,7 @@ export let widgets = [
         "icon": "glyphicon-envelope",
         "description": "View any correspondence that has previously been sent to you.",
         "category": "left",
-        "module": "inbox"
+        "module": "/inbox"
     },
     {
         "title": "Load Work-In-Progress",
@@ -19,7 +19,7 @@ export let widgets = [
             </p>
         `,
         "category": "center",
-        "module": "wip"
+        "module": "/wip"
 
     },
     {
@@ -37,7 +37,7 @@ export let widgets = [
 
         `,
         "category": "center",
-        "module": "funding"
+        "module": "/funding"
     },
     {
         "title": "Request for Review",
@@ -53,7 +53,7 @@ export let widgets = [
 
         `,
         "category": "center",
-        "module": "review"
+        "module": "/review"
     },
     {
         "title": "Apply for the Alexander Rutherford High School Achievement Scholarship",
@@ -67,7 +67,7 @@ export let widgets = [
 
         `,
         "category": "center",
-        "module": "scholarships"
+        "module": "/scholarships"
     },
     {
         "title": "Update Address and Notification Preference",
@@ -77,7 +77,7 @@ export let widgets = [
  
         `,
         "category": "right",
-        "module": "address"
+        "module": "/address"
     },
     {
         "title": "Upload Electronic Document(s)",
@@ -87,7 +87,7 @@ export let widgets = [
  
         `,
         "category": "left",
-        "module": "upload"
+        "module": "/upload"
     },
     {
         "title": "View Inquiry",
@@ -97,6 +97,6 @@ export let widgets = [
  
         `,
         "category": "right",
-        "module": "inquiry"
+        "module": "/inquiry"
     }
 ];

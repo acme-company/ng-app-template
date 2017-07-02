@@ -8,16 +8,18 @@ import { FooterComponent } from "./shared/footer.component";
 import { WidgetComponent } from "./widgets/widget.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { NotFoundComponent } from "./shared/not-found.component";
+import { WelcomeComponent } from "./welcome.component";
 
 @NgModule({
-  imports:      [ AppRoutingModule, BrowserModule, HttpModule ],
+  imports:      [ BrowserModule, HttpModule,AppRoutingModule ],
   declarations: [ 
     AppComponent, 
     MasterpageComponent, 
     HeaderComponent, 
     FooterComponent,
     WidgetComponent,
-    NotFoundComponent 
+    NotFoundComponent,
+    WelcomeComponent 
   ],
   bootstrap:    [ AppComponent ]
 })

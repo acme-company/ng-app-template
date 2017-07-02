@@ -1,0 +1,42 @@
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <h2>Welcome to the Students Finance System (SFS)</h2>
+            <hr />
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <widget class="{{widget.module}}" *ngFor="let widget of leftWidgets" [title]="widget.title" [icon]="widget.icon" [module]="widget.module">
+                <div [innerHTML]="widget.description"></div>
+            </widget>
+        </div>
+        <div class="col-sm-6">
+            <widget class="{{wip.module}}" [title]="wip.title" [icon]="wip.icon" [module]="wip.module">
+                <div [innerHTML]="wip.description"></div>
+                <br />
+                <table class="table table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <td>Funding Year</td>
+                            <td>Application Type</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>2015/2016</td><td>Full Time Application</td></tr>
+                        <tr><td>2016/2017</td><td>Full Time Application</td></tr>
+                    </tbody>
+                </table>
+            </widget>
+            <widget class="{{widget.module}}" *ngFor="let widget of centerWidgets" [title]="widget.title" [icon]="widget.icon" [module]="widget.module">
+                <div [innerHTML]="widget.description"></div>
+            </widget>
+        </div>
+        <div class="col-sm-3">
+            <widget class="{{widget.module}}" *ngFor="let widget of rightWidgets" [title]="widget.title" [icon]="widget.icon" [module]="widget.module">
+                <div [innerHTML]="widget.description"></div>
+            </widget>
+            
+        </div>
+    </div>

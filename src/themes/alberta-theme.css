@@ -48,7 +48,7 @@
   height: 120px;
 }
 
-.alberta-theme .funding table head {
+.alberta-theme widget.wip table thead {
     background-color:steelblue; 
     color:white;
 }
