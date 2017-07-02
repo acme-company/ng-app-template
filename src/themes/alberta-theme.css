@@ -1,0 +1,44 @@
+.alberta-theme header .navbar-inverse {
+    background-color: #36424a;
+    border-color: #aabf66;
+}
+
+.alberta-theme #footer {
+    background-color: #36424a;
+}
+
+.alberta-theme #footer .breadcrumb {
+    background: none;
+    border: 0;
+    padding: 0;
+    margin-bottom: 0;
+    float: left;
+    font-size: 0.6em;
+}
+.alberta-theme #footer .breadcrumb a {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    -webkit-transition: border-bottom .1s ease-in;
+    transition: border-bottom .1s ease-in;
+}
+.alberta-theme #footer .breadcrumb a:hover {
+    color: inverseLinkColor;
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.alberta-theme #header .nav-bar-top {
+    z-index: 1002;
+    position: relative;
+    background-color: #597400;
+    min-height: 8px;
+    border-top: 1px solid #aabf66;
+}
+
+.alberta-theme {
+  background: aqua;
+  background: radial-gradient(aqua, white);
+  border-radius: 6px;
+  height: 120px;
+}
