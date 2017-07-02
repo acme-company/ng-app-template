@@ -39,6 +39,16 @@
 .alberta-theme {
   background: aqua;
   background: radial-gradient(aqua, white);
+  background: -webkit-radial-gradient(aqua, white);
+  background: -o-radial-gradient(aqua, white);
+  background: -moz-radial-gradient(aqua, white);
+  background: radial-gradient(aqua, white);
+  
   border-radius: 6px;
   height: 120px;
+}
+
+.alberta-theme .funding table head {
+    background-color:steelblue; 
+    color:white;
 }

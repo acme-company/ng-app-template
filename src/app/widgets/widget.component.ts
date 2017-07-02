@@ -8,5 +8,6 @@ import { Component, Input } from '@angular/core';
 export class WidgetComponent { 
     @Input() title: string;
     @Input() icon: string;
+    @Input() module: string;
     
 }

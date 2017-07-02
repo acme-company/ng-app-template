@@ -6,15 +6,18 @@ import { MasterpageComponent } from "./shared/masterpage.component";
 import { HeaderComponent } from "./shared/header.component";
 import { FooterComponent } from "./shared/footer.component";
 import { WidgetComponent } from "./widgets/widget.component";
+import { AppRoutingModule } from "./app-routing.module";
+import { NotFoundComponent } from "./shared/not-found.component";
 
 @NgModule({
-  imports:      [ BrowserModule, HttpModule ],
+  imports:      [ AppRoutingModule, BrowserModule, HttpModule ],
   declarations: [ 
     AppComponent, 
     MasterpageComponent, 
     HeaderComponent, 
     FooterComponent,
-    WidgetComponent 
+    WidgetComponent,
+    NotFoundComponent 
   ],
   bootstrap:    [ AppComponent ]
 })

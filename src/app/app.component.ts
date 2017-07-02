@@ -12,6 +12,7 @@ export interface Widget {
   icon:string;
   description: string;
   category: string;
+  module: string
 }
 
 @Component({
