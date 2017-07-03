@@ -11,21 +11,21 @@ console.log('* ReviewModule Loaded *');
 var ReviewModule = (function () {
     function ReviewModule() {
     }
+    ReviewModule = __decorate([
+        NgModule({
+            imports: [
+                BrowserModule
+            ],
+            declarations: [
+                ReviewComponent
+            ],
+            providers: [],
+            bootstrap: [
+                ReviewComponent
+            ]
+        })
+    ], ReviewModule);
     return ReviewModule;
 }());
-ReviewModule = __decorate([
-    NgModule({
-        imports: [
-            BrowserModule
-        ],
-        declarations: [
-            ReviewComponent
-        ],
-        providers: [],
-        bootstrap: [
-            ReviewComponent
-        ]
-    })
-], ReviewModule);
 export { ReviewModule };
 //# sourceMappingURL=review.module.js.map

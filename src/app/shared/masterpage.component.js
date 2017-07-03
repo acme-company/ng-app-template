@@ -8,14 +8,14 @@ import { Component } from "@angular/core";
 var MasterpageComponent = (function () {
     function MasterpageComponent() {
     }
+    MasterpageComponent = __decorate([
+        Component({
+            selector: 'masterpage',
+            templateUrl: './masterpage.component.html',
+            styleUrls: ['./masterpage.component.scss']
+        })
+    ], MasterpageComponent);
     return MasterpageComponent;
 }());
-MasterpageComponent = __decorate([
-    Component({
-        selector: 'masterpage',
-        templateUrl: './masterpage.component.html',
-        styleUrls: ['./masterpage.component.scss']
-    })
-], MasterpageComponent);
 export { MasterpageComponent };
 //# sourceMappingURL=masterpage.component.js.map

@@ -12,15 +12,15 @@ var LettersComponent = (function () {
     function LettersComponent() {
     }
     LettersComponent.prototype.ngOnInit = function () { };
+    LettersComponent = __decorate([
+        Component({
+            selector: 'letters',
+            templateUrl: './letters.component.html',
+            styleUrls: ['./letters.component.scss']
+        }),
+        __metadata("design:paramtypes", [])
+    ], LettersComponent);
     return LettersComponent;
 }());
-LettersComponent = __decorate([
-    Component({
-        selector: 'letters',
-        templateUrl: './letters.component.html',
-        styleUrls: ['./letters.component.scss']
-    }),
-    __metadata("design:paramtypes", [])
-], LettersComponent);
 export { LettersComponent };
 //# sourceMappingURL=letters.component.js.map

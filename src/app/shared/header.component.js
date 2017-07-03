@@ -8,14 +8,14 @@ import { Component } from "@angular/core";
 var HeaderComponent = (function () {
     function HeaderComponent() {
     }
+    HeaderComponent = __decorate([
+        Component({
+            selector: 'header',
+            templateUrl: './header.component.html',
+            styleUrls: ['./header.component.scss']
+        })
+    ], HeaderComponent);
     return HeaderComponent;
 }());
-HeaderComponent = __decorate([
-    Component({
-        selector: 'header',
-        templateUrl: './header.component.html',
-        styleUrls: ['./header.component.scss']
-    })
-], HeaderComponent);
 export { HeaderComponent };
 //# sourceMappingURL=header.component.js.map

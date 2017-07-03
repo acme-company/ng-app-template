@@ -1,0 +1,14 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "protractor.conf.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "tsc": "..\\node_modules\\.bin\\tsc"
+  },
+  "author": "",
+  "license": "ISC"
+}

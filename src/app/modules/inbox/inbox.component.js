@@ -8,13 +8,13 @@ import { Component } from "@angular/core";
 var InboxComponent = (function () {
     function InboxComponent() {
     }
+    InboxComponent = __decorate([
+        Component({
+            templateUrl: 'inbox.component.html',
+            styleUrls: ['inbox.component.scss']
+        })
+    ], InboxComponent);
     return InboxComponent;
 }());
-InboxComponent = __decorate([
-    Component({
-        templateUrl: 'inbox.component.html',
-        styleUrls: ['inbox.component.scss']
-    })
-], InboxComponent);
 export { InboxComponent };
 //# sourceMappingURL=inbox.component.js.map

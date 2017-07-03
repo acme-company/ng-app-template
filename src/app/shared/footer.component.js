@@ -8,14 +8,14 @@ import { Component } from "@angular/core";
 var FooterComponent = (function () {
     function FooterComponent() {
     }
+    FooterComponent = __decorate([
+        Component({
+            selector: '.footer',
+            templateUrl: './footer.component.html',
+            styleUrls: ['./footer.component.scss']
+        })
+    ], FooterComponent);
     return FooterComponent;
 }());
-FooterComponent = __decorate([
-    Component({
-        selector: '.footer',
-        templateUrl: './footer.component.html',
-        styleUrls: ['./footer.component.scss']
-    })
-], FooterComponent);
 export { FooterComponent };
 //# sourceMappingURL=footer.component.js.map

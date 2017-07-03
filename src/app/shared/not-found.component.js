@@ -12,15 +12,15 @@ var NotFoundComponent = (function () {
     function NotFoundComponent() {
     }
     NotFoundComponent.prototype.ngOnInit = function () { };
+    NotFoundComponent = __decorate([
+        Component({
+            selector: 'not-found',
+            templateUrl: './not-found.component.html',
+            styleUrls: ['./not-found.component.scss']
+        }),
+        __metadata("design:paramtypes", [])
+    ], NotFoundComponent);
     return NotFoundComponent;
 }());
-NotFoundComponent = __decorate([
-    Component({
-        selector: 'not-found',
-        templateUrl: './not-found.component.html',
-        styleUrls: ['./not-found.component.scss']
-    }),
-    __metadata("design:paramtypes", [])
-], NotFoundComponent);
 export { NotFoundComponent };
 //# sourceMappingURL=not-found.component.js.map

@@ -19,14 +19,14 @@ var WelcomeComponent = (function () {
     }
     WelcomeComponent.prototype.ngOnInit = function () {
     };
+    WelcomeComponent = __decorate([
+        Component({
+            selector: 'welcome',
+            templateUrl: 'welcome.component.html'
+        }),
+        __metadata("design:paramtypes", [])
+    ], WelcomeComponent);
     return WelcomeComponent;
 }());
-WelcomeComponent = __decorate([
-    Component({
-        selector: 'welcome',
-        templateUrl: 'welcome.component.html'
-    }),
-    __metadata("design:paramtypes", [])
-], WelcomeComponent);
 export { WelcomeComponent };
 //# sourceMappingURL=welcome.component.js.map

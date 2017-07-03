@@ -11,18 +11,18 @@ import { Component, Input } from '@angular/core';
 var WidgetComponent = (function () {
     function WidgetComponent() {
     }
+    __decorate([
+        Input(),
+        __metadata("design:type", Object)
+    ], WidgetComponent.prototype, "widget", void 0);
+    WidgetComponent = __decorate([
+        Component({
+            selector: 'widget',
+            templateUrl: './widget.component.html',
+            styleUrls: ['./widget.component.scss']
+        })
+    ], WidgetComponent);
     return WidgetComponent;
 }());
-__decorate([
-    Input(),
-    __metadata("design:type", Object)
-], WidgetComponent.prototype, "widget", void 0);
-WidgetComponent = __decorate([
-    Component({
-        selector: 'widget',
-        templateUrl: './widget.component.html',
-        styleUrls: ['./widget.component.scss']
-    })
-], WidgetComponent);
 export { WidgetComponent };
 //# sourceMappingURL=widget.component.js.map

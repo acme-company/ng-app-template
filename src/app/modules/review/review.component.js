@@ -12,15 +12,15 @@ var ReviewComponent = (function () {
     function ReviewComponent() {
     }
     ReviewComponent.prototype.ngOnInit = function () { };
+    ReviewComponent = __decorate([
+        Component({
+            selector: 'review',
+            templateUrl: 'review.component.html',
+            styleUrls: ['review.component.scss']
+        }),
+        __metadata("design:paramtypes", [])
+    ], ReviewComponent);
     return ReviewComponent;
 }());
-ReviewComponent = __decorate([
-    Component({
-        selector: 'review',
-        templateUrl: 'review.component.html',
-        styleUrls: ['review.component.scss']
-    }),
-    __metadata("design:paramtypes", [])
-], ReviewComponent);
 export { ReviewComponent };
 //# sourceMappingURL=review.component.js.map

@@ -13,15 +13,15 @@ import 'rxjs/add/operator/filter';
 var AppComponent = (function () {
     function AppComponent() {
     }
+    AppComponent = __decorate([
+        Component({
+            selector: 'app',
+            templateUrl: './app.component.html',
+            styleUrls: ['./app.component.scss']
+        }),
+        __metadata("design:paramtypes", [])
+    ], AppComponent);
     return AppComponent;
 }());
-AppComponent = __decorate([
-    Component({
-        selector: 'app',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.scss']
-    }),
-    __metadata("design:paramtypes", [])
-], AppComponent);
 export { AppComponent };
 //# sourceMappingURL=app.component.js.map

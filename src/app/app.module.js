@@ -18,22 +18,22 @@ import { WelcomeComponent } from "./welcome.component";
 var AppModule = (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        NgModule({
+            imports: [BrowserModule, HttpModule, AppRoutingModule],
+            declarations: [
+                AppComponent,
+                MasterpageComponent,
+                HeaderComponent,
+                FooterComponent,
+                WidgetComponent,
+                NotFoundComponent,
+                WelcomeComponent
+            ],
+            bootstrap: [AppComponent]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    NgModule({
-        imports: [BrowserModule, HttpModule, AppRoutingModule],
-        declarations: [
-            AppComponent,
-            MasterpageComponent,
-            HeaderComponent,
-            FooterComponent,
-            WidgetComponent,
-            NotFoundComponent,
-            WelcomeComponent
-        ],
-        bootstrap: [AppComponent]
-    })
-], AppModule);
 export { AppModule };
 //# sourceMappingURL=app.module.js.map

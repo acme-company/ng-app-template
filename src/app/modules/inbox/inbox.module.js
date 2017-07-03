@@ -13,19 +13,19 @@ console.log('* InboxModule Loaded *');
 var InboxModule = (function () {
     function InboxModule() {
     }
+    InboxModule = __decorate([
+        NgModule({
+            imports: [
+                CommonModule,
+                InboxRoutingModule
+            ],
+            declarations: [
+                InboxComponent, LettersComponent
+            ],
+            providers: []
+        })
+    ], InboxModule);
     return InboxModule;
 }());
-InboxModule = __decorate([
-    NgModule({
-        imports: [
-            CommonModule,
-            InboxRoutingModule
-        ],
-        declarations: [
-            InboxComponent, LettersComponent
-        ],
-        providers: []
-    })
-], InboxModule);
 export { InboxModule };
 //# sourceMappingURL=inbox.module.js.map
