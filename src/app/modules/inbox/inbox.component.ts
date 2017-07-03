@@ -1,7 +1,8 @@
 import { Component } from "@angular/core";
 
 @Component({
-    template: '<router-outlet></router-outlet>'
+    templateUrl: 'inbox.component.html',
+    styleUrls: [ 'inbox.component.scss']
 })
 export class InboxComponent {
     

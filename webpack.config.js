@@ -79,7 +79,7 @@ module.exports = {
       names: ["app", "vendor", "polyfills"],
       minChunks: Infinity
     }),
-    new ExtractTextPlugin('css/styles.css'),
+    new ExtractTextPlugin('css/styles.[hash].css'),
 
 
     new HtmlWebpackPlugin({

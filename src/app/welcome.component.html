@@ -1,19 +1,19 @@
     <div class="row">
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
-            <h2>Welcome to the Students Finance System (SFS)</h2>
+            <h2 class="title">Welcome to the Students Finance System (SFS)</h2>
             <hr />
         </div>
         <div class="col-sm-2"></div>
     </div>
     <div class="row">
         <div class="col-sm-3">
-            <widget class="{{widget.module}}" *ngFor="let widget of leftWidgets" [title]="widget.title" [icon]="widget.icon" [module]="widget.module">
-                <div [innerHTML]="widget.description"></div>
+            <widget class="{{widget.module}}" *ngFor="let widget of leftWidgets" [widget]="widget">
+                <div [outerHTML]="widget.description"></div>
             </widget>
         </div>
         <div class="col-sm-6">
-            <widget class="{{wip.module}}" [title]="wip.title" [icon]="wip.icon" [module]="wip.module">
+            <widget class="wip" [widget]="wip">
                 <div [innerHTML]="wip.description"></div>
                 <br />
                 <table class="table table-hover table-bordered">
@@ -21,20 +21,40 @@
                         <tr>
                             <td>Funding Year</td>
                             <td>Application Type</td>
+                            <td>Last Accessed Date</td>
+                            <td></td>                            
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>2015/2016</td><td>Full Time Application</td></tr>
-                        <tr><td>2016/2017</td><td>Full Time Application</td></tr>
+                        <tr>
+                            <td>2015/2016</td>
+                            <td>Full Time</td>
+                            <td>Jun 15, 2016</td>
+                            <td>
+                                <div>
+                                    <button type="button" class="btn btn-primary btn-xs">Edit <span class="glyphicon glyphicon-pencil"></span></button>
+                                    <button type="button" class="btn btn-danger btn-xs">Delete <span class="glyphicon glyphicon-remove"></span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2016/2017</td>
+                            <td>Full Time</td>
+                            <td>Jul 1, 2017</td>
+                            <td>
+                                <button type="button" class="btn btn-primary btn-xs">Edit <span class="glyphicon glyphicon-pencil"></span></button>
+                                <button type="button" class="btn btn-danger btn-xs">Delete <span class="glyphicon glyphicon-remove"></span></button>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </widget>
-            <widget class="{{widget.module}}" *ngFor="let widget of centerWidgets" [title]="widget.title" [icon]="widget.icon" [module]="widget.module">
-                <div [innerHTML]="widget.description"></div>
+            <widget class="{{widget.module}}" *ngFor="let widget of centerWidgets" [widget]="widget">
+                <div [outerHTML]="widget.description"></div>
             </widget>
         </div>
         <div class="col-sm-3">
-            <widget class="{{widget.module}}" *ngFor="let widget of rightWidgets" [title]="widget.title" [icon]="widget.icon" [module]="widget.module">
+            <widget class="{{widget.module}}" *ngFor="let widget of rightWidgets" [widget]="widget">
                 <div [innerHTML]="widget.description"></div>
             </widget>
             

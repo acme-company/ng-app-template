@@ -37,18 +37,27 @@
 }
 
 .alberta-theme {
-  background: aqua;
-  background: radial-gradient(aqua, white);
-  background: -webkit-radial-gradient(aqua, white);
-  background: -o-radial-gradient(aqua, white);
-  background: -moz-radial-gradient(aqua, white);
-  background: radial-gradient(aqua, white);
-  
-  border-radius: 6px;
-  height: 120px;
+    /*background: aqua;
+    background: -webkit-radial-gradient(white, aqua); 
+    background: -o-radial-gradient(white, aqua);
+    background: -moz-radial-gradient(white, aqua); 
+    background: radial-gradient( white, aqua);*/
+    background: aqua;
+    background: -webkit-radial-gradient(aqua, white); 
+    background: -o-radial-gradient(aqua, white);
+    background: -moz-radial-gradient(aqua, white); 
+    background: radial-gradient( aqua, white);
 }
 
 .alberta-theme widget.wip table thead {
     background-color:steelblue; 
     color:white;
+}
+
+
+.alberta-theme widget.wip table button {
+}
+
+.alberta-theme .title {
+    color: #005072;
 }

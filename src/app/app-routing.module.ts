@@ -6,9 +6,9 @@ import { WelcomeComponent } from "./welcome.component";
 
 
 const appRoutes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: WelcomeComponent },
   { path: 'inbox', loadChildren: './modules/inbox/inbox.module.ts#InboxModule' },
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
 ];
 

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Widget } from "../welcome.component";
 
 @Component({
   selector: 'widget',
@@ -6,8 +7,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./widget.component.scss']
 })
 export class WidgetComponent { 
-    @Input() title: string;
-    @Input() icon: string;
-    @Input() module: string;
+    @Input() widget: Widget;
     
 }
