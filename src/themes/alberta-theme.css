@@ -52,6 +52,7 @@
 .alberta-theme widget.wip table thead {
     background-color:steelblue; 
     color:white;
+    border: steelblue;
 }
 
 
@@ -60,4 +61,22 @@
 
 .alberta-theme .title {
     color: #005072;
+}
+
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.bs-callout-warning {
+    border-left-color: #aa6708;
+}
+
+.bs-callout-warning .glyphicon{
+    color: #aa6708;
 }

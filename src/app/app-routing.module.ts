@@ -14,7 +14,6 @@ const appRoutes: Routes = [
 
 export const AppRoutingModule = RouterModule.forRoot(appRoutes, { 
   useHash: true,
-  preloadingStrategy: PreloadAllModules,
-  enableTracing: true
+  preloadingStrategy: PreloadAllModules
 });
 
