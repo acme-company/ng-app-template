@@ -7,21 +7,22 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component } from '@angular/core';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/filter';
-var AppComponent = (function () {
-    function AppComponent() {
+import { Component, Input } from '@angular/core';
+var WidgetComponent = (function () {
+    function WidgetComponent() {
     }
-    return AppComponent;
+    return WidgetComponent;
 }());
-AppComponent = __decorate([
+__decorate([
+    Input(),
+    __metadata("design:type", Object)
+], WidgetComponent.prototype, "widget", void 0);
+WidgetComponent = __decorate([
     Component({
-        selector: 'app',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.scss']
-    }),
-    __metadata("design:paramtypes", [])
-], AppComponent);
-export { AppComponent };
-//# sourceMappingURL=app.component.js.map
+        selector: 'widget',
+        templateUrl: './widget.component.html',
+        styleUrls: ['./widget.component.scss']
+    })
+], WidgetComponent);
+export { WidgetComponent };
+//# sourceMappingURL=widget.component.js.map

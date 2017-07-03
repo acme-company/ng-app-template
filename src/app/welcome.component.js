@@ -8,20 +8,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/filter';
-var AppComponent = (function () {
-    function AppComponent() {
+import { widgets } from './data/widgets';
+var WelcomeComponent = (function () {
+    function WelcomeComponent() {
+        this.wip = widgets.filter(function (t) { return t.title == 'Load Work-In-Progress'; })[0];
+        var tmp = widgets.filter(function (t) { return !t.custom; });
+        this.leftWidgets = tmp.filter(function (t) { return t.category == 'left'; });
+        this.centerWidgets = tmp.filter(function (t) { return t.category == 'center'; });
+        this.rightWidgets = tmp.filter(function (t) { return t.category == 'right'; });
     }
-    return AppComponent;
+    WelcomeComponent.prototype.ngOnInit = function () {
+    };
+    return WelcomeComponent;
 }());
-AppComponent = __decorate([
+WelcomeComponent = __decorate([
     Component({
-        selector: 'app',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.scss']
+        selector: 'welcome',
+        templateUrl: 'welcome.component.html'
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-export { AppComponent };
-//# sourceMappingURL=app.component.js.map
+], WelcomeComponent);
+export { WelcomeComponent };
+//# sourceMappingURL=welcome.component.js.map

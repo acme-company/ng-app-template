@@ -8,20 +8,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/filter';
-var AppComponent = (function () {
-    function AppComponent() {
+var LettersComponent = (function () {
+    function LettersComponent() {
     }
-    return AppComponent;
+    LettersComponent.prototype.ngOnInit = function () { };
+    return LettersComponent;
 }());
-AppComponent = __decorate([
+LettersComponent = __decorate([
     Component({
-        selector: 'app',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.scss']
+        selector: 'letters',
+        templateUrl: './letters.component.html',
+        styleUrls: ['./letters.component.scss']
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-export { AppComponent };
-//# sourceMappingURL=app.component.js.map
+], LettersComponent);
+export { LettersComponent };
+//# sourceMappingURL=letters.component.js.map

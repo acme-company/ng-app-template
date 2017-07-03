@@ -1,0 +1,1 @@
+{"version":3,"file":"inbox-routing.module.js","sourceRoot":"","sources":["inbox-routing.module.ts"],"names":[],"mappings":"AAAA,OAAO,EAAU,YAAY,EAAqB,MAAM,iBAAiB,CAAC;AAC1E,OAAO,EAAE,cAAc,EAAE,MAAM,mBAAmB,CAAC;AAEnD,IAAM,WAAW,GAAW;IAC1B,EAAE,IAAI,EAAE,EAAE,EAAE,SAAS,EAAE,cAAc,EAAC;CACvC,CAAC;AAEF,MAAM,CAAC,IAAM,kBAAkB,GAAG,YAAY,CAAC,QAAQ,CAAC,WAAW,CAAC,CAAC"}

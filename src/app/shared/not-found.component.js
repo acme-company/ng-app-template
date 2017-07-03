@@ -8,20 +8,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/filter';
-var AppComponent = (function () {
-    function AppComponent() {
+var NotFoundComponent = (function () {
+    function NotFoundComponent() {
     }
-    return AppComponent;
+    NotFoundComponent.prototype.ngOnInit = function () { };
+    return NotFoundComponent;
 }());
-AppComponent = __decorate([
+NotFoundComponent = __decorate([
     Component({
-        selector: 'app',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.scss']
+        selector: 'not-found',
+        templateUrl: './not-found.component.html',
+        styleUrls: ['./not-found.component.scss']
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-export { AppComponent };
-//# sourceMappingURL=app.component.js.map
+], NotFoundComponent);
+export { NotFoundComponent };
+//# sourceMappingURL=not-found.component.js.map

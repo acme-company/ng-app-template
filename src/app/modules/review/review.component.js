@@ -8,20 +8,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Component } from '@angular/core';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/filter';
-var AppComponent = (function () {
-    function AppComponent() {
+var ReviewComponent = (function () {
+    function ReviewComponent() {
     }
-    return AppComponent;
+    ReviewComponent.prototype.ngOnInit = function () { };
+    return ReviewComponent;
 }());
-AppComponent = __decorate([
+ReviewComponent = __decorate([
     Component({
-        selector: 'app',
-        templateUrl: './app.component.html',
-        styleUrls: ['./app.component.scss']
+        selector: 'review',
+        templateUrl: 'review.component.html',
+        styleUrls: ['review.component.scss']
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-export { AppComponent };
-//# sourceMappingURL=app.component.js.map
+], ReviewComponent);
+export { ReviewComponent };
+//# sourceMappingURL=review.component.js.map
