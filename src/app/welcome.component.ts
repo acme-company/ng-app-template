@@ -29,6 +29,10 @@ export class WelcomeComponent implements OnInit {
         this.rightWidgets = tmp.filter(t => t.category == 'right');
     }
 
+    getClassName(module:string){
+        return module ? module.replace("/","") : module;
+    }
+
     ngOnInit() {
     }
 }

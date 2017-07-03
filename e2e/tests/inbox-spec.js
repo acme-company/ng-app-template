@@ -1,11 +1,18 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var protractor_1 = require("protractor");
-describe('angularjs homepage todo list', function () {
+describe('SFS welcome page', function () {
     it('should navigate to inbox', function () {
         protractor_1.browser.get('http://localhost:8080');
-        var e = protractor_1.element(protractor_1.by.css('widget[class="\inbox"]'));
-        expect(e).toBe(null);
+        var e = protractor_1.element(protractor_1.by.css('.inbox button'));
+        e.click();
+        expect(protractor_1.browser.getTitle()).toEqual('Inbox');
+        var trRows = protractor_1.element.all(protractor_1.by.css('table tbody tr'));
+        trRows.count().then(function (t) {
+            console.log(t);
+        });
+        expect(trRows.count()).toBeGreaterThan(0);
+        //expect(e).toBe(null);
         // element(by.model('todoList.todoText')).sendKeys('write first protractor test');
         // element(by.css('[value="add"]')).click();
         // var todoList = element.all(by.repeater('todo in todoList.todos'));

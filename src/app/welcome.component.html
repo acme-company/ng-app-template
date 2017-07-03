@@ -8,7 +8,7 @@
     </div>
     <div class="row">
         <div class="col-sm-3">
-            <widget class="{{widget.module}}" *ngFor="let widget of leftWidgets" [widget]="widget">
+            <widget class="{{getClassName(widget.module)}}" *ngFor="let widget of leftWidgets" [widget]="widget">
                 <div [outerHTML]="widget.description"></div>
             </widget>
         </div>
