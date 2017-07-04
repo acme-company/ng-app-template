@@ -10,7 +10,7 @@ var reporter = new HtmlScreenshotReporter({
     reportTitle: null,
     userCss: null,
     ignoreSkippedSpecs: true,
-    captureOnlyFailedSpecs: false,
+    captureOnlyFailedSpecs: true,
     reportOnlyFailedSpecs: false,
     showQuickLinks: true,
     reportFailedUrl: true,
@@ -20,11 +20,13 @@ var reporter = new HtmlScreenshotReporter({
     },
     pathBuilder: function (currentSpec, suites, browserCapabilities) {
         // will return chrome/your-spec-name.png
+        console.log(browserCapabilities);
+        console.log(suites);
         return browserCapabilities.get('browserName') + '/' + currentSpec.fullName;
     },
-    metadataBuilder: function (currentSpec, suites, browserCapabilities) {
-        return { id: currentSpec.id, os: browserCapabilities.get('browserName') };
-    },
+    // metadataBuilder: function(currentSpec, suites, browserCapabilities) {
+    //   return { id: currentSpec.id, os: browserCapabilities.get('browserName') };
+    // },
     preserveDirectory: false,
     inlineImages: false
 });
@@ -34,7 +36,19 @@ exports.config = {
     directConnect: true,
     chromeDriver: 'c:\\Users\\kangm\\AppData\\Roaming\\npm\\chromedriver.exe',
     firefoxPath: 'c:\\Users\\kangm\\AppData\\Roaming\\npm\\geckodriver.exe',
+    suites: {
+        welcome_page: ['./tests/welcome.spec.js'],
+        smoke_test: ['./tests/inbox.spec.js'],
+    },
     multiCapabilities: [
+        // {
+        //   browserName: 'chrome',
+        //   chromeOptions: {
+        //     mobileEmulation: {
+        //       deviceName: 'BlackBerry Z30'
+        //     }      
+        //   }
+        // },
         {
             browserName: 'chrome',
             chromeOptions: {
@@ -44,14 +58,38 @@ exports.config = {
         {
             browserName: 'chrome',
             chromeOptions: {
-                args: ['--window-size=1024,768']
+                args: ['--window-size=640,1136'],
             }
         },
         {
             browserName: 'chrome',
             chromeOptions: {
+                args: ['--window-size=1024,768']
+            }
+        },
+        // {
+        //   browserName: 'chrome',
+        //   
+        //   chromeOptions: {
+        //     mobileEmulation: {
+        //       deviceName: 'Galaxy S5'
+        //     }
+        //   }
+        // },
+        // {
+        //   browserName: 'chrome',
+        //   
+        //   chromeOptions: {
+        //     mobileEmulation: {
+        //       deviceName: 'iPhone 6'
+        //     }
+        //   }
+        // },
+        {
+            browserName: 'chrome',
+            chromeOptions: {
                 mobileEmulation: {
-                    deviceName: 'Galaxy S5'
+                    deviceName: 'iPad'
                 }
             }
         },
