@@ -17,9 +17,7 @@ describe('SFS welcome page', function () {
         protractor_1.element(protractor_1.by.css('.inbox button')).click();
     });
     it('should navigate back to home', function () {
-        protractor_1.browser.sleep(5000);
         protractor_1.browser.executeScript('window.scrollTo(0,700);').then(function () {
-            protractor_1.browser.sleep(5000);
             protractor_1.element(protractor_1.by.css('#returnHome')).click();
             expect(protractor_1.browser.getTitle()).toEqual('Student Finance System');
         });

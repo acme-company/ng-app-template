@@ -20,9 +20,7 @@ describe('SFS welcome page',() => {
   });
 
   it('should navigate back to home', () => {
-    browser.sleep(5000);
     browser.executeScript('window.scrollTo(0,700);').then(function () {
-    browser.sleep(5000);
         element(by.css('#returnHome')).click();
         expect(browser.getTitle()).toEqual('Student Finance System');
     });
