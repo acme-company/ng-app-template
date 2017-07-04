@@ -7,9 +7,14 @@
     "test": "tests"
   },
   "scripts": {
-    "tsc": "..\\node_modules\\.bin\\tsc",
-    "test": "npm run tsc && protractor protractor.conf.js"
+    "tests": "gulp tests",
+    "test": "gulp test --file"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-protractor": "^4.1.0",
+    "gulp-typescript": "^3.1.7"
+  }
 }

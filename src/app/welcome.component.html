@@ -8,8 +8,8 @@
     </div>
     <div class="row">
         <div class="col-sm-3">
-            <widget class="{{getClassName(widget.module)}}" *ngFor="let widget of leftWidgets" [widget]="widget">
-                <div [outerHTML]="widget.description"></div>
+            <widget  *ngFor="let w of leftWidgets" [ngClass]="getClassName(w.module)" [widget]="w">
+                <div [outerHTML]="w.description"></div>
             </widget>
         </div>
         <div class="col-sm-6">

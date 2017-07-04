@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run All Tests",
+            "runtimeExecutable": "node_modules\\.bin\\gulp",
+            "cwd": "${workspaceRoot}/e2e",
+            "windows": {
+                "runtimeExecutable": "node_modules\\.bin\\gulp.cmd"
+            },
+            "runtimeArgs": [
+                "tests"
+            ],
+            "port": 5858
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run Test",
+            "runtimeExecutable": "node_modules\\.bin\\gulp",
+            "cwd": "${workspaceRoot}/e2e",
+            "windows": {
+                "runtimeExecutable": "node_modules\\.bin\\gulp.cmd"
+            },
+            "runtimeArgs": [
+                "test",
+                "--file", 
+                "${file}"
+            ],
+            "port": 5858
+        }
+    ]
+}

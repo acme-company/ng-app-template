@@ -19,4 +19,4 @@ describe("Inbox", function () {
         expect(trRows.count()).toBeGreaterThan(0);
     });
 });
-//# sourceMappingURL=inbox-spec.js.map
+//# sourceMappingURL=inbox.spec.js.map
