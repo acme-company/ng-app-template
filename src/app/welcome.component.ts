@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { widgets } from './data/widgets';
+import { Title } from "@angular/platform-browser";
 
 export interface Widget {
   title: string;
@@ -21,7 +22,9 @@ export class WelcomeComponent implements OnInit {
     rightWidgets: Widget[];
     wip: Widget;
     
-    constructor() {
+    
+    constructor(title:Title) {
+        title.setTitle("Student Finance System");
         this.wip = widgets.filter(t => t.title == 'Load Work-In-Progress')[0];
         let tmp = widgets.filter(t => !t.custom);
         this.leftWidgets = tmp.filter(t => t.category == 'left');

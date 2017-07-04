@@ -13,4 +13,3 @@ describe('SFS welcome page', function () {
         expect(protractor_1.browser.getTitle()).toEqual('Inbox');
     });
 });
-//# sourceMappingURL=welcome.spec.js.map

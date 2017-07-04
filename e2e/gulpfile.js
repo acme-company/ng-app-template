@@ -8,24 +8,26 @@ const protractor = require("gulp-protractor").protractor;
 const typescript = require("gulp-typescript");
 var tsProject = typescript.createProject('tsconfig.json');
 
-gulp.task('compileConfig', function() {
-    return gulp.src('protractor.conf.ts')
+gulp.task('compile', function() {
+    return gulp.src([
+            'protractor.conf.ts',
+            './tests/**/*.spec.ts'
+        ], {base: '.'})
         .pipe(tsProject())
         .pipe(gulp.dest('.'));
 });
 
-gulp.task("tests", ['compileConfig'], function() {
+gulp.task("tests", ['compile'], function() {
    return gulp.src([
-       "./tests/**/*.ts"
+       "./tests/**/*.js"
       ])
-     .pipe(tsProject())   
      .pipe(protractor({
         configFile: "protractor.conf.js"
       }))
       .on('error', function(e) { throw e }); 
 });
 
-gulp.task("test", ['compileConfig'], function() {
+gulp.task("test", ['compile'], function() {
     return gulp.src(gutil.env.file)
         .pipe(tsProject())
         .pipe(protractor({

@@ -20,10 +20,12 @@ describe('SFS welcome page',() => {
   });
 
   it('should navigate back to home', () => {
-    var e = element(by.css('#returnHome'));
-    e.click();
+    
+    browser.executeScript('window.scrollTo(0,250);').then(function () {
+        element(by.css('#returnHome')).click();
+        expect(browser.getTitle()).toEqual('Student Finance System');
+    });
 
-    expect(browser.getTitle()).toEqual('Student Finance System');
   });
 
 });
