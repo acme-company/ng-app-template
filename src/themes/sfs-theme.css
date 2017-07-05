@@ -1,0 +1,160 @@
+.alberta-theme {
+    background-color:white!important;
+}
+
+.alberta-theme header .navbar-inverse {
+    background-color: rgb(88,194,225);
+    background-color: rgb(88,194,225);
+}
+
+.alberta-theme #footer {
+    background-color: black;
+    color:white;
+}
+
+.alberta-theme #footer .breadcrumb {
+    background: none;
+    border: 0;
+    padding: 0;
+    margin-bottom: 0;
+    float: left;
+    font-size: 0.6em;
+}
+.alberta-theme #footer .breadcrumb a {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    -webkit-transition: border-bottom .1s ease-in;
+    transition: border-bottom .1s ease-in;
+}
+.alberta-theme #footer .breadcrumb a:hover {
+    color: inverseLinkColor;
+    border-bottom-color: rgba(0, 0, 0, 0.5);
+}
+
+.alberta-theme #header .nav-bar-top {
+    z-index: 1002;
+    position: relative;
+    background-color: rgb(88,194,225);
+    min-height: 8px;
+    border-top: 1px solid rgb(88,194,225);
+}
+
+.alberta-theme {
+    /*background: aqua;
+    background: -webkit-radial-gradient(white, aqua); 
+    background: -o-radial-gradient(white, aqua);
+    background: -moz-radial-gradient(white, aqua); 
+    background: radial-gradient( white, aqua);*/
+    background: white;
+    background: -webkit-radial-gradient(white, white); 
+    background: -o-radial-gradient(white, white);
+    background: -moz-radial-gradient(white, white); 
+    background: radial-gradient( white, white);
+}
+
+.alberta-theme widget.wip table thead {
+    background-color:rgb(0,174,239); 
+    color:white;
+    border: rgb(0,174,239); 
+}
+
+
+.alberta-theme widget.wip table button {
+}
+
+.alberta-theme .title {
+    color: black;
+}
+
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.bs-callout-warning {
+    border-left-color: #aa6708;
+}
+
+.bs-callout-warning .glyphicon{
+    color: #aa6708;
+}
+
+#header a {
+    color: black;
+}
+
+#header .navbar-nav li a {
+    background-color: rgb(36,169,209);
+}
+
+#header .navbar-header>.navbar-toggle{
+    border-color:  rgb(36,169,209);
+}
+
+#header.navbar-inverse {
+    border-color: transparent
+}
+
+.panel, .panel-heading, .panel-body {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.panel-info>.panel-heading {
+    background-color: transparent;
+}
+
+.wip table button {
+    background-color: transparent;
+    border: 0px;
+    width: auto;
+    text-align: right;
+    font-size: 0px;
+}
+
+.wip table button .glyphicon{
+    color: black;
+    font-size: 25px;
+    text-decoration: underline;
+}
+table div {
+    white-space: nowrap;
+}
+
+h3.panel-title {
+    color: black;
+}
+
+widget .panel-body>.icon {
+    border-color: lightgray;
+}
+
+.wip .panel-body>.table, 
+.wip .panel-body>.table>tbody>tr>td, 
+.wip .panel-body>.table>tbody>tr>th, 
+.wip .panel-body>.table>tfoot>tr>td, 
+.wip .panel-body>.table>tfoot>tr>th, 
+.wip .panel-body>.table>thead>tr>td, 
+.wip .panel-body>.table>thead>tr>th {
+    border: 1px solid #ddd;
+}
+
+widget .panel-info>.panel-heading {
+    border-color: transparent;
+}
+
+widget .panel-title {
+    font-size: 1.3em;
+    text-decoration: underline;
+}
+
+widget .list-group>.list-group-item {
+    border: 0px;
+}

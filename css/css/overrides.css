@@ -1,0 +1,35 @@
+﻿
+.alberta-theme .ab-logo {
+    background-image: url("AlbertaLogoV.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    display: inline-block;
+    width: 290px;
+    padding: 0;
+    margin: 0;
+    height: 47px;
+    margin-top: 5px;
+}
+
+.alberta-theme code {
+    tab-size: 2;      
+    -moz-tab-size: 2;      
+    -o-tab-size: 2;
+}
+
+.alberta-theme header.site-header .page-navbox {
+    margin-bottom: 0px;
+}
+
+.alberta-theme pre {
+    clear: both;
+}
+
+.carousel-inner .item .img-responsive {
+    width: 100%;
+}
+
+.alberta-theme #carousel-full.home .carousel-caption p {
+    font-size: 20px;
+}

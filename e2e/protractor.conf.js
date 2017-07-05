@@ -49,24 +49,27 @@ exports.config = {
         //     }      
         //   }
         // },
-        {
-            browserName: 'chrome',
-            chromeOptions: {
-                args: ['--window-size=3000,2000']
-            }
-        },
-        {
-            browserName: 'chrome',
-            chromeOptions: {
-                args: ['--window-size=640,1136'],
-            }
-        },
-        {
-            browserName: 'chrome',
-            chromeOptions: {
-                args: ['--window-size=1024,768']
-            }
-        },
+        // {
+        //   browserName: 'chrome',
+        //   chromeOptions: {
+        //     args: ['--window-size=3000,2000'] 
+        //   }
+        // },
+        // {
+        //   browserName: 'chrome',
+        //   chromeOptions: {
+        //     args: ['--window-size=640,1136'] ,
+        //     // mobileEmulation: {
+        //     //   deviceName: 'iPhone 5'
+        //     // }
+        //   }
+        // },
+        // {
+        //   browserName: 'chrome',
+        //   chromeOptions: {
+        //     args: ['--window-size=1024,768'] 
+        //   }
+        // },
         // {
         //   browserName: 'chrome',
         //   
@@ -76,20 +79,11 @@ exports.config = {
         //     }
         //   }
         // },
-        // {
-        //   browserName: 'chrome',
-        //   
-        //   chromeOptions: {
-        //     mobileEmulation: {
-        //       deviceName: 'iPhone 6'
-        //     }
-        //   }
-        // },
         {
             browserName: 'chrome',
             chromeOptions: {
                 mobileEmulation: {
-                    deviceName: 'iPad'
+                    deviceName: 'iPhone 5'
                 }
             }
         },

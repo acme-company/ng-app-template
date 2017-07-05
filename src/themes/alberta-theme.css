@@ -1,3 +1,7 @@
+.alberta-theme {
+    background-color:aqua!important;
+}
+
 .alberta-theme header .navbar-inverse {
     background-color: #36424a;
     border-color: #aabf66;
@@ -48,6 +52,17 @@
     background: -moz-radial-gradient(aqua, white); 
     background: radial-gradient( aqua, white);
 }
+
+
+/*.alberta-theme header>.navbar {
+    background: #36424a;
+    background: -webkit-linear-gradient(#36424a, rgb(65,79,88)); 
+    background: -o-linear-gradient(#36424a, rgb(65,79,88));
+    background: -moz-linear-gradient(#36424a, rgb(65,79,88)); 
+    background: linear-gradient( #36424a, rgb(65,79,88));
+    
+
+}*/
 
 .alberta-theme widget.wip table thead {
     background-color:steelblue; 

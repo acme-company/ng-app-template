@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/font-awesome.css"/>
+    <link rel="stylesheet" href="/js/jqueryui/jquery-ui.css"/>
+    <link rel="stylesheet" href="/css/base.css"/>
+    <link rel="stylesheet" href="/css/overrides.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Government of Alberta">
+    <meta name="description" content="Meta Description">
+    <title>Style Guide v. 1.2.1</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#216275">
+    <meta name="msapplication-TileImage" content="/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="/js/html5shiv.js"></script>
+        <script src="/js/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-XXXXXXXXX-1', 'auto'); /* Insert team code in here */
+        ga('send', 'pageview');
+
+    </script>
+</head>
+<body class="alberta-theme">
+    <!--[if lte IE 9 ]>
+        <div class="alerts">
+            <h1>Important Messages</h1>
+            <a href="http://browsehappy.com/">
+                <h1><i class="fa fa-warning"></i>You are using an older browser</h1>
+                <p>Please upgrade for an optimal experience</p>
+            </a>
+        </div>
+    <![endif]-->
+	
+	<!-- Start Header Block -->
+    <header class="site-header" id="header">
+        <div class="container">
+            <div id="branding" class="row nopadding nomargin">
+
+                <div class="col-sm-12 show-for-print">
+                    <img src="/css/AlbertaLogoPrint.png" alt="">
+                </div>
+                <div class="col-xs-4 col-md-6 logo-container">
+                    <a href="/Home">
+                        <div class="ab-logo"><span class="access-offscreen">Alberta Government</span></div>
+                    </a>
+                </div>
+                <div class="topics-buttons text-right">
+
+                </div>
+                <div class="col-sm-6 col-md-6 search-holder nopadding">
+                    <div class="search-input margin-md-bottom">
+                        <a href="javascript:{}" class="search-submit" onclick="document.getElementById('top_search').submit();"><span class="fa fa-search"></span></a>
+                        <form method="get" action="http://alberta.ca/albertaFiles/googlesearch/searchpage.aspx" id="top_search">
+                            <input type="text" class="top-search form-control" name="q" value="" autocomplete="on" placeholder="Search Alberta.ca">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="topics-menu">
+                </div>
+            </div>
+        </div>
+        
+		<div class="container-fluid nav-bar-top">
+			<div class="row local-nav-top">
+				<div class="col-xs-12 nopadding-md-down">
+					<div class="container container-fluid-md-down">
+						<div class="row">
+							<div class="col-xs-12 page-navbox">
+								<div class="row">
+									<div class="col-xs-12 hidden-md hidden-lg mobile-menu-top">
+										<ul class="mobile-menu-tabs menu">
+											<li class="menu-tab active"><a href="javascript:void(0);">menu</a></li>
+											<li class="alberta-tab"><a href="javascript:void(0);">Alberta.ca</a></li>
+											<li class="close-tab"><a href="javascript:void(0);"><i class="fa fa-times"></i></a></li>
+										</ul>
+									</div>
+									<div class="col-xs-12">
+										<nav class="nav-right">
+											<!-- TOP NAV: SHOW FOR DESKTOP -->
+											<ul class="menu">
+												<li class="home-icon hidden-xs hidden-sm active current">
+													<a href="/Home"><i class="fa fa-home"></i></a>
+												</li>
+												<li class="">
+													<a href="/GettingStarted">Getting Started</a>
+												</li>
+												<li class="">
+													<a href="/PageTemplates">Page Templates</a>
+												</li>
+												<li class="">
+													<a href="/Components">Page Blocks &amp; Components</a>
+												</li>
+												<li class="">
+													<a href="/Examples">Examples</a>
+												</li>
+											</ul>
+										</nav>
+										<nav id="nav-alberta" class="hidden right-column-nav">
+											<ul class="menu">
+												<li><a href="http://alberta.ca">Government of Alberta Home</a></li>
+												<li><a href="http://alberta.ca/ministries.cfm">Ministries</a></li>
+												<li><a href="http://alberta.ca/news.cfm">News</a></li>
+												<li><a href="http://alberta.ca/contact.cfm">Contact Government</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End Header Block -->
+	<!-- Start Breadcrumb/share Block -->
+    <div class="container">
+        <div id="breadcrumbs-share">
+            <div id="breadcrumbs">
+              <!-- There are no breadcrumbs on the home page, but we have included the structure here for reference -->
+               <!--
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Section Landing</a></li>
+                    <li><a href="#">Parent Page</a></li>
+                </ul>
+                -->
+            </div>
+            <div id="html-share">
+                <div class="html-share-box hidden-xs hidden-sm">
+                    <div class="inner">
+                        <!-- Twitter -->
+                        <a href="#" onclick="shareToTwitter('Find information, guidance and code for styling Advanced Education sites & applications. ')">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <!-- Facebook -->
+                        <a href="#" onclick="shareToFacebook('Find information, guidance and code for styling Advanced Education sites & applications. ');">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <!-- Email -->
+                        <a href="#" onclick="shareToEmail('Find information, guidance and code for styling Advanced Education sites & applications. ');">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- End Breadcrumb/share Block -->
+<main>
+<!-- Start Main content block -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="page-title-box margin-lg-bottom">
+                    
+    <h1 id="pageTitleStub">Style Guide v. 1.2.1</h1>
+    <p class="lede">Find information, guidance and code for styling Advanced Education sites & applications. <a href="/GettingStarted/Versioning">View version history</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 nopadding">
+            <div class="steps-carousel" data-per-page="1" data-item-height="405" data-auto-scroll="0" data-show-arrows="false">
+                <div class="item bkg-full-image" style="background-image: url('/img/home-feature1.jpg');">
+                    <div class="inner">
+                        <div class="shade-dark padding-lg">
+                            <h2>Quickly create digital products that meet Government of Alberta web standards for style and accessibility</h2>
+                            <a href="/package.zip" class="btn btn-md btn-default margin-md-top">Download the Code Bundle</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid block-background-secondary">
+    <div class="container">
+        <div class="row midrow margin-md-top">
+            <div class="col-sm-12 col-md-4">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 section">
+                        <h2 class="field-content">
+                            Getting Started
+                        </h2>
+                        <p>Learn about the grid, fonts, icons, colours, code standards and versions</p>
+                        <p><a href="/GettingStarted" class="btn btn-primary btn-lg">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 section">
+                        <h2 class="field-content">
+                            Page Templates
+                        </h2>
+                        <p>View the page templates available for your site or application</p>
+                        <p><a href="/PageTemplates" class="btn btn-primary btn-lg">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 section">
+                        <h2 class="field-content">
+                            Page Blocks &amp; Components
+                        </h2>
+                        <p>Learn about page blocks &amp; the page components used in them</p>
+                        <p><a href="/Components" class="btn btn-primary btn-lg">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Main content block -->
+</main>
+    <footer>
+        <div class="container-fluid footer-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="container footer padding-lg-top padding-md-bottom">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 quick-links">
+                                <h2 class="sr-only">Quick links</h2>
+                                <ul>
+                                    <li><a class="quick-link-item" href="http://alberta.ca/index.cfm">Government home</a></li>
+                                    <li><a class="quick-link-item" href="http://alberta.ca/ministries.cfm">Ministries</a></li>
+                                    <li><a class="quick-link-item" href="http://alberta.ca/news.cfm">Alberta government news</a></li>
+                                    <li><a class="quick-link-item" href="http://alberta.ca/contact.cfm">Contact government</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-4 social-follow">
+                                <h2>Follow the Alberta Government on</h2>
+                                <ul>
+                                    <li><a target="blank" href="https://www.facebook.com/youralberta.ca"><span class="fa fa-facebook" aria-hidden="true"></span> <span>Facebook</span></a></li>
+                                    <li><a target="blank" href="https://twitter.com/youralberta"><span class="fa fa-twitter" aria-hidden="true"></span> <span>Twitter</span></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-4 using-site">
+                                <h2 class="sr-only">About this site</h2>
+                                <ul>
+                                    <li><a href="http://alberta.ca/usingthissite.cfm">Using Alberta.ca</a></li>
+                                    <li><a href="http://alberta.ca/disclaimer.cfm">Disclaimer</a></li>
+                                    <li><a href="http://alberta.ca/privacystatement.cfm">Privacy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional Loading Screen -->
+    <div id="LoadingArea">
+        <div class="fa fa-cog fa-spin fa-2x"></div>
+    </div>
+    <!-- Mandatory Scripts -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jqueryui/jquery-ui.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/modernizr.js"></script>
+    <script src="/js/abca.js"></script>
+    <!-- End Mandatory Scripts -->
+    <!-- Optional Scripts -->
+
+    <script src="http://alberta.ca/newsroom/newsroom.js"></script>
+    
+    <script type="text/javascript" src="/js/sticky-navigation.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#datepicker").datepicker();
+        });
+    </script>
+	<script type="text/javascript" src="/js/jquery.equalheights.js"></script>
+    <script type="text/javascript" src="/js/jquery.equalheights.custom.js"></script>
+    <!-- End Optional Scripts -->
+    
+	<!-- Map site structure here if you need a full top navigation on mobile -->
+    <script>
+        topicData = {
+            "pages": [{
+                "title": "Style Guide v. 1.2.1",
+                "url": "/Home"
+            }, {
+                "title": "Getting Started",
+                "url": "/GettingStarted",
+                "pages": [{
+                    "title": "Versioning",
+                    "url": "/GettingStarted/Versioning",
+                    "pages": [
+                        {
+                            "title": "Change Log",
+                            "url": "/GettingStarted/ChangeLog"
+                        }, {
+                            "title": "Version v. 1.2.1",
+                            "url": "/GettingStarted/LatestVersion"
+                        }
+                    ]
+                }, {
+                    "title": "Grid System",
+                    "url": "/GettingStarted/GridSystem"
+                }, {
+                    "title": "Fonts & Icons",
+                    "url": "/GettingStarted/FontsIcons"
+                }, {
+                    "title": "Colour Palette",
+                    "url": "/GettingStarted/ColourPalette"
+                }, {
+                    "title": "Code Standards",
+                    "url": "/GettingStarted/CodeStandards"
+                }]
+            }, {
+                "title": "Page Templates",
+                "url": "/PageTemplates",
+                "pages": [{
+                    "title": "Home Page Template",
+                    "url": "/PageTemplates/HomePage"
+                }, {
+                    "title": "Landing Page Template",
+                    "url": "/PageTemplates/LandingPage"
+                }, {
+                    "title": "Content Page Template",
+                    "url": "/PageTemplates/ContentPage"
+                }, {
+                    "title": "Search Results Template",
+                    "url": "/PageTemplates/SearchResults"
+                }, {
+                    "title": "Advanced Search Template",
+                    "url": "/PageTemplates/AdvancedSearch"
+                }]
+            }, {
+                "title": "Examples",
+                "url": "/Examples"
+            }]
+        };
+        buildTopMenuJSON();
+    </script>
+</body>
+</html>

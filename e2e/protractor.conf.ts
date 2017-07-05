@@ -54,30 +54,30 @@ export let config: Config = {
     //     }      
     //   }
     // },
-    {
-      browserName: 'chrome',
+    // {
+    //   browserName: 'chrome',
       
-      chromeOptions: {
-        args: ['--window-size=3000,2000'] 
-      }
-    },
-    {
-      browserName: 'chrome',
+    //   chromeOptions: {
+    //     args: ['--window-size=3000,2000'] 
+    //   }
+    // },
+    // {
+    //   browserName: 'chrome',
       
-      chromeOptions: {
-        args: ['--window-size=640,1136'] ,
-        // mobileEmulation: {
-        //   deviceName: 'iPhone 5'
-        // }
-      }
-    },
-    {
-      browserName: 'chrome',
+    //   chromeOptions: {
+    //     args: ['--window-size=640,1136'] ,
+    //     // mobileEmulation: {
+    //     //   deviceName: 'iPhone 5'
+    //     // }
+    //   }
+    // },
+    // {
+    //   browserName: 'chrome',
       
-      chromeOptions: {
-        args: ['--window-size=1024,768'] 
-      }
-    },
+    //   chromeOptions: {
+    //     args: ['--window-size=1024,768'] 
+    //   }
+    // },
     // {
     //   browserName: 'chrome',
     //   
@@ -87,6 +87,17 @@ export let config: Config = {
     //     }
     //   }
     // },
+
+    {
+      browserName: 'chrome',
+      
+      chromeOptions: {
+        mobileEmulation: {
+          deviceName: 'iPhone 5'
+        }
+      }
+    },
+
     // {
     //   browserName: 'chrome',
     //   
@@ -96,15 +107,15 @@ export let config: Config = {
     //     }
     //   }
     // },
-    {
-      browserName: 'chrome',
+    // {
+    //   browserName: 'chrome',
       
-      chromeOptions: {
-        mobileEmulation: {
-          deviceName: 'iPad'
-        }
-      }
-    },
+    //   chromeOptions: {
+    //     mobileEmulation: {
+    //       deviceName: 'iPad'
+    //     }
+    //   }
+    // },
 
     
     
