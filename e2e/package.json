@@ -1,0 +1,23 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "protractor.conf.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "tests": "gulp tests",
+    "test": "gulp test --file",
+    "report": "live-server --open=reports --port=23415"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-protractor": "^4.1.0",
+    "gulp-typescript": "^3.1.7",
+    "live-server": "^1.2.0",
+    "protractor-jasmine2-screenshot-reporter": "^0.4.0"
+  }
+}
