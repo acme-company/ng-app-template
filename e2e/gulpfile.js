@@ -32,3 +32,8 @@ gulp.task("test", ['compile'], function () {
         }))
         .on('error', function (e) { throw e })
 });
+
+gulp.task("report", function() {
+    return gulp.src('reports\\index.html')
+    .pipe(shell("..\\node_modules\\.bin\\live-server --open=reports --port=23415"));
+});
