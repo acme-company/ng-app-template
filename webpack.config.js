@@ -104,8 +104,26 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-        loader: 'file-loader?name=assets/[name].[hash].[ext]'
+        test: /\.(png|jpe?g|gif|svg|ico)$/,
+        loader: 'url-loader',
+				 query: {
+				 	useRelativePath: false,
+				  	outputPath: "images/",
+            publicPath: "",
+				  	limit: 5000,
+				  	name: '[name].[hash].[ext]'
+				 }
+      },
+      {
+        test:/\.(woff|woff2|ttf|eot)$/,
+        loader: 'file-loader',
+          query: {
+				 	useRelativePath: false,
+				  	outputPath: "fonts/",
+            publicPath: "../",
+				  	name: '[name].[hash].[ext]'
+            
+          }
       }
     ]
   }
