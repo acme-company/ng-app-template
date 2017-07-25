@@ -9,9 +9,11 @@ export class MockAuthGuard implements CanActivate {
     constructor(private router: Router, private mockAuthService: MockAuthService) { }
 
     canActivate() {
-         // not logged in so redirect to login page
-        this.router.navigate(['/mockLogin']);
-
-        return this.mockAuthService.isSiamsIntegrated();
+        return this.mockAuthService.isSiamsIntegrated().map(t=> {
+            if (!t) {
+                this.router.navigate(['/mockLogin']);
+            }
+            return t;
+        });
     }
 }
