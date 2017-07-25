@@ -11,6 +11,9 @@ export class MockAuthService {
 
     constructor(private http: Http) {
     }
+    isSiamsAuthenticated() : Observable<boolean> {
+        return this.http.get('http://localhost:8081/api/siams/authenticated').map(t=>t.json().result);
+    }
 
     isSiamsIntegrated() : Observable<boolean> {
         return this.http.get('http://localhost:8081/api/siams/integrated').map(t=>t.json().result);
