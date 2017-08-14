@@ -5,7 +5,18 @@ import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
     selector: 'error',
-    templateUrl: 'error-dialog.component.html'
+    templateUrl: 'error-dialog.component.html',
+    styles: [
+        `
+        .modal {
+            display: block;
+            padding-right: 12px;
+        }
+        pre {
+            font-size: 0.7em;
+        }
+        `
+    ]
 })
 export class ErrorDialogComponent  {
     error: Property[];

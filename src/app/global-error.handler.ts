@@ -14,7 +14,7 @@ export class GlobalErrorHandler implements ErrorHandler {
          router.navigate([
           { outlets: 
             { modal: ['error'] }
-          }], { skipLocationChange: false});
+          }], { skipLocationChange: true});
         
     }
 
