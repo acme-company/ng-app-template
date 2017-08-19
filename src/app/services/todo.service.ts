@@ -43,7 +43,11 @@ export class TodoService {
     }
     add(todo:Todo): Todo {
         if (this.todos.length > 0) {
-            this.nextid = this.todos.map(t=> t.id).sort().reverse()[0] + 1;
+            this.nextid = this.todos.map(t=> t.id).sort((a,b)=> {
+                if (a > b ) return 1;
+                if (a < b ) return -1;
+                return 0;
+            }).reverse()[0] + 1;
         }
         // assign a new id
         todo.id = this.nextid;
