@@ -1,1 +1,66 @@
-<h1>Hello {{name}}</h1>
+<div class="container">
+    <br />
+    <div class="panel panel-primary">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Todo List
+        </div>
+        <div class="panel-body">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="true">
+                                Filter
+                                <span class="caret"></span>
+                            </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a (click)="filterOption='All'">All</a></li>
+                    <li><a (click)="filterOption='Complete'">Completed</a></li>
+                    <li><a (click)="filterOption='Incomplete'">Incomplete</a></li>
+                </ul>
+                <strong>{{ filterOption }}</strong>
+            </div>
+
+        </div>
+
+        <!-- Table -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>Date Created</td>
+                    <td>Date Complete</td>
+                    <td>Done?</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of todos | filter: filterOption">
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.dateCreated | date: 'dd-MMM-yyyy' }}</td>
+                    <td>{{ item.dateComplete | date: 'dd-MMM-yyyy' }}</td>
+                    <td>{{ item.done }}</td>
+                    <td>
+                        <button [disabled]="item.done" (click)="complete(item)" class="btn btn-xs btn-primary">Complete</button>
+                        <button (click)="remove(item)" class="btn btn-xs btn-danger">Remove</button>
+                    </td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <label for="task">Name</label>
+                                <input #nameValue type="text" class="form-control" id="task" placeholder="Enter task here">
+                            </div>
+                            <button (click)="add(nameValue)" class="btn btn-md btn-primary">Add</button>
+                        </div>
+                    </td>
+
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
