@@ -14,10 +14,7 @@ import { ErrorMonitor } from "./error-handler/error.monitor";
 })
 export class AppComponent implements OnInit {
   constructor(private router:Router, private monitor:ErrorMonitor) {
-    this.monitor.error.subscribe(t=> {
-
-    });
-    
+   
   }
   public name: string = 'Angular';
   public ngOnInit() {

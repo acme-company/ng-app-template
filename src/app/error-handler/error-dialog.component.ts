@@ -1,7 +1,8 @@
 import { Component, ApplicationRef, NgZone, Inject, AfterViewInit, ChangeDetectorRef } from "@angular/core";
-import { ErrorMonitor, Property } from './error.monitor';
+import { ErrorMonitor } from './error.monitor';
 import { Observable } from "rxjs/Observable";
 import { Router, ActivatedRoute } from "@angular/router";
+import { ErrorInfo } from "./error-info.model";
 
 @Component({
     selector: 'error',
@@ -19,9 +20,10 @@ import { Router, ActivatedRoute } from "@angular/router";
     ]
 })
 export class ErrorDialogComponent  {
-    error: Property[];
+    error: ErrorInfo;
     constructor(private errorMonitor:ErrorMonitor, private router: Router, @Inject(ChangeDetectorRef) private ref:ChangeDetectorRef){
         this.error = this.errorMonitor.lastError; 
+        
         console.log(this.error); 
         setTimeout(t=> {
             this.ref.detectChanges();

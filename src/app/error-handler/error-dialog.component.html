@@ -7,12 +7,42 @@
       </div>
       <div class="modal-body">
         <div class="table-responsive">
-        <table class="table">
-          <tr *ngFor="let p of error">
-            <td>{{p.key}}</td>
+        <table class="table">            
+          <tr *ngIf="error.message">
+            <td>Message</td>
+            <td>{{ error.message }}</td>
+          </tr>
+          <tr  *ngIf="error.description">
+            <td>Description</td>
+            <td>{{ error.description }}</td>
+          </tr>
+          <tr *ngIf="error.name">
+            <td> Name </td>
             <td>
-              <pre>{{p.value}}</pre>
+              <pre>{{error.name}}</pre>
             </td>
+          </tr>
+          <tr  *ngIf="error.ok">
+            <td> OK </td>
+            <td>
+              <pre>{{error.ok}}</pre>
+            </td>
+          </tr>
+          <tr  *ngIf="error.stack">
+            <td>Stack</td>
+            <td><pre>{{ error.stack }}</pre></td>
+          </tr>
+          <tr  *ngIf="error.url">
+            <td>URL</td>
+            <td><pre>{{ error.url }}</pre></td>
+          </tr>
+          <tr  *ngIf="error.status">
+            <td>Status</td>
+            <td><pre>{{ error.status }}</pre></td>
+          </tr>
+          <tr  *ngIf="error.statusText">
+            <td>Status Text</td>
+            <td><pre>{{ error.statusText }}</pre></td>
           </tr>
         </table>
         </div>
