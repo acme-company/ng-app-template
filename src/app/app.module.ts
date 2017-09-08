@@ -25,10 +25,6 @@ let routes = [
 
 var routerModule = RouterModule.forRoot(routes, { useHash: true});
 
-// export function httpFactory(xhrBackend: XHRBackend, requestOptions: RequestOptions, monitor: HttpMonitor, router: Router) {
-//   return new HttpInterceptor(xhrBackend, requestOptions, monitor);
-// }
-
 @NgModule({
   imports: [BrowserModule, HttpClientModule, routerModule],
   declarations: [DisableDirective,AppComponent, SpinnerComponent,ErrorDialogComponent, HomeComponent],
@@ -37,12 +33,6 @@ var routerModule = RouterModule.forRoot(routes, { useHash: true});
     ErrorMonitor,
     HttpMonitor,
     ErrorDialogComponent,
-    // {
-      
-    //   provide: Http,
-    //   useFactory: httpFactory,
-    //   deps: [XHRBackend, RequestOptions, HttpMonitor]
-    // },
     {
       provide: HTTP_INTERCEPTORS,
       useClass: RequestHttpInterceptor,
