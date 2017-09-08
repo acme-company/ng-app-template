@@ -6,7 +6,7 @@ import { HttpHandler, HttpEvent } from "@angular/common/http";
 import 'rxjs/add/operator/retryWhen'
 import 'rxjs/add/operator/finally'
 
-import { HttpMonitor } from "./http.monitor";
+import { HttpMonitor } from "../request-spinner/http.monitor";
 
 export class RequestHttpInterceptor implements HttpInterceptor {
     constructor(private httpMonitor: HttpMonitor){

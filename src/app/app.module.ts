@@ -2,19 +2,19 @@ import { NgModule, ErrorHandler, Injector } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HttpModule, Http, XHRBackend, RequestOptions } from '@angular/http';
+import { HttpClientModule } from "@angular/common/http";
 //import { HttpInterceptor } from './http.service';
 import { Router, RouterModule } from "@angular/router";
-import { HttpMonitor } from "./http.monitor";
-import { SpinnerComponent } from "./spinner.component";
-import { ErrorMonitor } from "./error.monitor";
-import { GlobalErrorHandler } from "./global-error.handler";
-import { ErrorDialogComponent } from "./error-dialog.component";
+import { HttpMonitor } from "./request-spinner/http.monitor";
+import { SpinnerComponent } from "./request-spinner/spinner.component";
+import { ErrorMonitor } from "./error-handler/error.monitor";
+import { GlobalErrorHandler } from "./error-handler/global-error.handler";
+import { ErrorDialogComponent } from "./error-handler/error-dialog.component";
 import { HomeComponent } from './home.component';
-import { DisableDirective } from "./disable.directive";
+import { DisableDirective } from "./request-spinner/disable.directive";
 import {HTTP_INTERCEPTORS} from '@angular/common/http';
-import { RetryHttpInterceptor } from "./retry.interceptor";
-import { HttpClientModule } from "@angular/common/http";
-import { RequestHttpInterceptor } from "./request.interceptor";
+import { RetryHttpInterceptor } from "./interceptors/retry.interceptor";
+import { RequestHttpInterceptor } from "./interceptors/request.interceptor";
 
 let routes = [
    { path: '', component: HomeComponent},

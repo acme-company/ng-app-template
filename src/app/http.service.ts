@@ -12,7 +12,7 @@ import "rxjs/add/operator/scan";
 import "rxjs/add/operator/share";
 import "rxjs/add/operator/timeout";
 
-import { HttpMonitor } from "./http.monitor";
+import { HttpMonitor } from "./request-spinner/http.monitor";
 
 export class HttpInterceptor extends Http {
 

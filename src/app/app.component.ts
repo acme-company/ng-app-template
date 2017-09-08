@@ -6,7 +6,7 @@ import 'rxjs/add/operator/retryWhen';
 import 'rxjs/add/operator/delay';
 import 'rxjs/add/operator/scan';
 import { Router } from "@angular/router";
-import { ErrorMonitor } from "./error.monitor";
+import { ErrorMonitor } from "./error-handler/error.monitor";
 
 @Component({
   selector: 'app',
